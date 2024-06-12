@@ -564,6 +564,7 @@ scripts: # Trailing comment
     expect(file).toContain('# Trailing comment');
     expect(file).toContain('# Nested comment');
     expect(file).toContain('#Comment without space');
+    expect(file).toContain('lsltrh: ls -ltrh');
     expect(YAML.parse(file)).toEqual({
       scripts: { lsltr: 'ls -ltr', lsltrh: 'ls -ltrh' },
     });
